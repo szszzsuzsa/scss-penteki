@@ -1,0 +1,280 @@
+body {
+  margin: 0px;
+  padding: 35px;
+  box-sizing: border-box;
+  color: #242d38;
+  background-color: #22b575;
+  text-align: left;
+  box-sizing: border-box;
+  color: whitesmoke;
+  overflow-x: hidden;
+  height: 100px;
+}
+
+.main-container {
+  grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+  justify-content: center;
+  padding: 40px 130px 60px;
+  gap: 70px;
+}
+
+.nav-title-p {
+  margin-top: 20px;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.nav-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.black {
+  background-color: black;
+  font-size: 1.2 rem;
+  padding: 15px;
+  position: relative;
+}
+
+.white {
+  background-color: whitesmoke;
+  color: black;
+  font-size: 1.2 rem;
+  padding: 15px;
+  position: relative;
+}
+
+.burger-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  background-color: #242d38;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.burger-btn span {
+  display: block;
+  width: 80%;
+  height: 7px;
+  margin: 4px;
+  background-color: #efd592;
+}
+
+.read {
+  color: #ffc107;
+  position: absolute;
+  bottom: -10%;
+  left: 0%;
+}
+
+#title {
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.l-title {
+  color: #ffc107;
+  font-size: 1.1rem;
+  padding-left: 10px;
+}
+
+.text {
+  font-size: 1rem;
+  line-height: 2;
+  padding: 10px 15px 20px 10px;
+}
+
+.link {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 50px;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+.far,
+.fa-play-circle {
+  font-size: 9rem;
+  display: grid;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.left-title {
+  bottom: 120px;
+  color: #ffc107;
+  position: absolute;
+  top: 90%;
+  padding-right: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .main-container {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .burger-btn {
+    padding: 0px;
+    right: 20px;
+    top: 20px;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+  }
+  .burger-btn span {
+    display: block;
+    width: 50%;
+    height: 7px;
+    margin: 4px;
+    background-color: #efd592;
+  }
+
+  body {
+    margin: 0px;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #242d38;
+    background-color: #22b575;
+    text-align: left;
+    box-sizing: border-box;
+    color: whitesmoke;
+    overflow-x: hidden;
+    height: 100vh;
+  }
+
+  .main-container {
+    grid-template-rows: repeat(3, 1fr);
+    display: grid;
+    justify-content: center;
+    padding: 50px 10px 20px;
+    margin-bottom: 50px;
+    gap: 80px;
+  }
+
+  .nav-title-p {
+    margin-top: 30px;
+    position: relative;
+  }
+
+  .nav-title {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(3%, -50%);
+  }
+
+  #title {
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    justify-content: left;
+    margin-bottom: 50px;
+  }
+
+  .black {
+    background-color: black;
+    font-size: 1.2 rem;
+    padding: 15px;
+    position: relative;
+  }
+
+  .white {
+    background-color: whitesmoke;
+    color: black;
+    font-size: 1.2 rem;
+    padding: 15px;
+    position: relative;
+  }
+
+  .burger-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 80px;
+    height: 80px;
+    padding: 20px;
+    background-color: #242d38;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .burger-btn span {
+    display: block;
+    width: 80%;
+    height: 7px;
+    margin: 4px;
+    background-color: #efd592;
+  }
+
+  .main-container {
+    flex-direction: row;
+    justify-content: center;
+    display: flex;
+    display: grid;
+  }
+
+  .read {
+    color: #ffc107;
+    position: absolute;
+    bottom: -10%;
+    left: 0%;
+  }
+
+  .l-title {
+    color: #ffc107;
+    font-size: 1.1rem;
+    padding-left: 10px;
+  }
+
+  .text {
+    font-size: 1rem;
+    line-height: 2;
+    padding: 10px 15px 20px 10px;
+  }
+
+  .link {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 50px;
+    letter-spacing: 3px;
+    cursor: pointer;
+  }
+
+  .far,
+.fa-play-circle {
+    font-size: 9rem;
+    display: grid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .left-title {
+    bottom: 120px;
+    color: #ffc107;
+    position: absolute;
+    top: 90%;
+    padding-right: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
